@@ -154,7 +154,7 @@ body {
 
 
 .custom-btn {
-    background: linear-gradient(135deg, #1146cb 0%, #2575fc 100%); /* Degradado de púrpura a azul */
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); /* Degradado de naranja a coral */
     color: white;
     border: none;
     border-radius: 50px;
@@ -167,7 +167,7 @@ body {
 
 
 .custom-btn:hover {
-    background: linear-gradient(135deg, #2575fc 0%, #1146cb 100%);
+    background: linear-gradient(135deg, #feb47b 0%, #ff7e5f 100%); /* Intercambio del degradado en hover */
     color: white;
     transform: translateY(-3px);
 }
