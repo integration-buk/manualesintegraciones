@@ -4,8 +4,12 @@ const users = [
       password: "123456"
     },
     {
-      email: "usuario2@example.com",
-      password: "clave456"
+      email: "aocanto@buk.cl",
+      password: "123456"
+    },
+    {
+      email: "dlopez@buk.cl",
+      password: "123456"
     },
     // Agrega más usuarios aquí
   ];
