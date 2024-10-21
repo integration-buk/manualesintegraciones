@@ -112,7 +112,7 @@ const manuales = [
       "nombre": "Configurar SSO OAUTH", 
       "fecha": "17-10-2024",
       "importante":"",
-      "descripcion": "Este manual te guía en la configuración del inicio de sesión único (SSO) mediante OAUTH, permitiendo a los usuarios autenticarse a través de su Proveedor de Identidad (IdP) para acceder a la plataforma de manera segura y sin credenciales adicionales.", 
+      "descripcion": "Este manual te guía en la configuración del inicio de sesión único (SSO) mediante el protocolo OAUTH, permitiendo a los usuarios autenticarse a través de su Proveedor de Identidad (IdP) para acceder a la plataforma de manera segura y sin credenciales adicionales.", 
       "url": "manual.html?id=sso_oauth",
       "activo": true, 
       "imagenes": ["imagenes/sso_oauth/sso_oauth_1.png",
@@ -162,12 +162,13 @@ const manuales = [
       "nombre": "Configurar SSO SAML", 
       "fecha": "17-10-2024",
       "importante":" Si has llegado a esta sección, debiste haber enviado al cliente el <strong>Identifier</strong> y el <strong>ACS</strong> para generar el XML que necesitaremos para realizar la configuración.<br><br>\
-       <strong>ACS:</strong> https://demo.buk.cl/users/saml/auth </br></br> \
-       <strong>Identifier:</strong> https://demo.buk.cl/users/saml/metadata </br></br> \
+      Las URLs están formadas a partir de la URL del cliente. Por ejemplo, si la URL del cliente es buk.buk.cl, entonces el ACS y el Identifier deben ser los siguientes:</br></br>\
+       <strong>ACS:</strong> https://buk.buk.cl/users/saml/auth </br></br> \
+       <strong>Identifier:</strong> https://buk.buk.cl/users/saml/metadata </br></br> \
        Estos dos parámetros son fundamentales, ya que el cliente debe ingresarlos en su proveedor de identidad al momento de crear la aplicación.\
        Una vez creada la aplicación, el cliente podrá descargar un archivo XML desde su proveedor.<br><br>\
        Es importante que el colaborador con el cual se realizará la prueba exista tanto en <strong>BUK</strong> como en la aplicación creada en el proveedor de identidad.",
-      "descripcion": "Este manual te guía en la configuración del inicio de sesión único (SSO) mediante SAML, permitiendo a los usuarios autenticarse a través de su Proveedor de Identidad (IdP) para acceder a la plataforma de manera segura y sin credenciales adicionales.", 
+      "descripcion": "Este manual te guía en la configuración del inicio de sesión único (SSO) mediante el protocolo SAML, permitiendo a los usuarios autenticarse a través de su Proveedor de Identidad (IdP) para acceder a la plataforma de manera segura y sin credenciales adicionales.", 
       "url": "manual.html?id=sso_saml",
       "activo": true, 
       "imagenes": ["imagenes/sso_saml/sso_saml_1.png",
@@ -207,12 +208,12 @@ const manuales = [
                 <td>Debemos ingresar los dominios que el cliente necesita autenticar ejemplo: buk.cl. Destacar que puede ser más de 1 y debe ir separado con puntoy coma.</td> \
             </tr> \
             <tr> \
-                <td><strong>Issuer/Audience URL (opcional)</strong></td> \
-                <td>Es un campo de texto libre personalizado. Suelen ser similares a contraseñas o URL’s.</td> \
+                <td><strong>Issuer/Audience URL</strong></td> \
+                <td>Aquí debes ingresar el Identifier que se envio al cliente al momento de configurar la aplicación en el proveedor</td> \
             </tr> \
             <tr> \
                 <td><strong>Authentication Context (opcional)</strong></td> \
-                <td>Método extra de autenticación de SAML.</td> \
+                <td>Se recomienda urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified </td> \
             </tr> \
             <tr> \
                 <td><strong>URL del IdP para SSO</strong></td> \
@@ -228,7 +229,7 @@ const manuales = [
             </tr> \
             <tr> \
                 <td><strong>Hash del certificado de IdP</strong></td> \
-                <td>Huella digital del certificado del proveedor de identidad. No es necesario si se tiene el certificado IdP.</td> \
+                <td>Huella digital del certificado del proveedor de identidad y la forma correcta es 45:A7:88, es decir separados por los 2 puntos. No es necesario si se tiene el certificado IdP.</td> \
             </tr> \
             <tr> \
                 <td><strong>URL IdP Logout forzada</strong></td> \
