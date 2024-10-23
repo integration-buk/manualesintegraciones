@@ -186,6 +186,10 @@ const manuales = [
         {
             "nombre": "OAUTH Integration English Version",
             "url": "https://docs.google.com/document/d/1y_lDcAp956WDmuiEPTSH57YxsyBa14SG/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
+        },
+        {
+            "nombre": "Errores y Soluciones SSO Buk/Cliente",
+            "url": "https://docs.google.com/document/d/1Rk8qPTEluJVnnHUMMT7WVBFWUFYwcWED/edit?usp=sharing&ouid=106476513391002674895&rtpof=true&sd=true"
         }
     ]
   },
@@ -285,6 +289,10 @@ const manuales = [
         {
             "nombre": "SAML Integration English Version",
             "url": "https://docs.google.com/document/d/1uA8rPuCZrQkfMsKsBe451NL0jAZMmsy4/edit?usp=sharing&ouid=114187329860437263985&rtpof=true&sd=true"
+        },
+        {
+            "nombre": "Errores y Soluciones SSO Buk/Cliente",
+            "url": "https://docs.google.com/document/d/1Rk8qPTEluJVnnHUMMT7WVBFWUFYwcWED/edit?usp=sharing&ouid=106476513391002674895&rtpof=true&sd=true"
         }
     ]
   },
