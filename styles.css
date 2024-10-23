@@ -27,7 +27,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    white-space: nowrap; /* Evita que el título se extienda en múltiples líneas */
+    /* white-space: nowrap; Evita que el título se extienda en múltiples líneas */
     overflow: hidden;
     text-overflow: ellipsis; /* Añade "..." si el título es muy largo */
 }
@@ -154,7 +154,7 @@ body {
 
 
 .custom-btn {
-    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); /* Degradado de naranja a coral */
+    background: linear-gradient(135deg, #2f4daa 0%, #6c8cd5 100%);
     color: white;
     border: none;
     border-radius: 50px;
@@ -167,7 +167,7 @@ body {
 
 
 .custom-btn:hover {
-    background: linear-gradient(135deg, #feb47b 0%, #ff7e5f 100%); /* Intercambio del degradado en hover */
+    background: linear-gradient(135deg, #FFA800 0%, #FFD366 100%);
     color: white;
     transform: translateY(-3px);
 }
@@ -179,7 +179,7 @@ body {
 
 /* Estilo personalizado para el botón de reiniciar */
 .custom-reset-btn {
-    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); /* Degradado de naranja a coral */
+    background: linear-gradient(135deg, #2f4daa 0%, #6c8cd5 100%);
     color: white;
     border: none;
     border-radius: 50px;
@@ -191,7 +191,8 @@ body {
 }
 
 .custom-reset-btn:hover {
-    background: linear-gradient(135deg, #feb47b 0%, #ff7e5f 100%); /* Intercambio del degradado en hover */
+    background: linear-gradient(135deg, #FFA800 0%, #FFD366 100%);
+    color: white;
     transform: translateY(-3px);
 }
 
