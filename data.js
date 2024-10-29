@@ -1,145 +1,5 @@
 const manuales = [
   {
-      "tipo": "SFTP", 
-      "nombre": "Envío de Centralización por SFTP", 
-      "fecha": "01-12-2023",
-      "importante":"",
-      "descripcion": "Verificar la configuración del SFTP para el envío del archivo centralización", 
-      "url": "manual.html?option=centralizacion_sftp",
-      "activo": false, 
-      "imagenes": ["imagenes/api_postman/utilizar_api_postman_1.png", "imagenes/api_postman/utilizar_api_postman_2.png"],
-      "highlightDetails": [
-            { x: 955, y: 5, width: 45, height: 40 },  // Rectángulo para la primera imagen
-            { x: 1010, y: 63, width: 270, height: 40 }  // Rectángulo para la segunda imagen
-        ],
-      "instrucciones": [
-            "Instrucción 1: Aquí es donde configuramos el SFTP.",
-            "Instrucción 2: Asegúrate de verificar los detalles de la configuración."
-        ],
-        "enlacesDocumentacion": [
-        {
-            "nombre": "Integración OAUTH",
-            "url": "https://docs.google.com/document/d/153Z6dIywDyZQVLDG458cUdKxSISovoZ3/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        },
-        {
-            "nombre": "OAUTH Integration English Version",
-            "url": "https://docs.google.com/document/d/1y_lDcAp956WDmuiEPTSH57YxsyBa14SG/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        }
-    ]
-  },
-  {
-      "tipo": "SFTP", 
-      "nombre": "Validar el envío a SFTP", 
-      "fecha": "05-12-2023",
-      "importante":"",
-      "descripcion": "Veremos el paso a paso para probar el envío del archivo banco o centralización al SFTP de BUK", 
-      "url": "manual.html?id=probar_sftp",
-      "activo": false,
-      "imagenes": ["imagenes/api_postman/utilizar_api_postman_1.png", "imagenes/api_postman/utilizar_api_postman_2.png"],
-      "highlightDetails": [
-            { x: 955, y: 5, width: 45, height: 40 },  // Rectángulo para la primera imagen
-            { x: 1010, y: 63, width: 270, height: 40 }  // Rectángulo para la segunda imagen
-        ],
-      "instrucciones": [
-            "Instrucción 1: Aquí es donde configuramos el SFTP.",
-            "Instrucción 2: Asegúrate de verificar los detalles de la configuración."
-        ],
-        "enlacesDocumentacion": [
-        {
-            "nombre": "Integración OAUTH",
-            "url": "https://docs.google.com/document/d/153Z6dIywDyZQVLDG458cUdKxSISovoZ3/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        },
-        {
-            "nombre": "OAUTH Integration English Version",
-            "url": "https://docs.google.com/document/d/1y_lDcAp956WDmuiEPTSH57YxsyBa14SG/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        }
-    ]
-  },
-  {
-      "tipo": "API", 
-      "nombre": "Creación de token y conexión API", 
-      "fecha": "01-12-2023",
-      "importante":"",
-      "descripcion": "Veremos como configurar el token (llave) desde BUK para poder conectarnos en apidocs", 
-      "url": "manual.html?id=token_api",
-      "activo": false, 
-      "imagenes": ["imagenes/api_postman/utilizar_api_postman_1.png", "imagenes/api_postman/utilizar_api_postman_2.png"],
-      "highlightDetails": [
-            { x: 955, y: 5, width: 45, height: 40 },  // Rectángulo para la primera imagen
-            { x: 1010, y: 63, width: 270, height: 40 }  // Rectángulo para la segunda imagen
-        ],
-      "instrucciones": [
-            "Instrucción 1: Aquí es donde configuramos el SFTP.",
-            "Instrucción 2: Asegúrate de verificar los detalles de la configuración."
-        ],
-        "enlacesDocumentacion": [
-        {
-            "nombre": "Integración OAUTH",
-            "url": "https://docs.google.com/document/d/153Z6dIywDyZQVLDG458cUdKxSISovoZ3/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        },
-        {
-            "nombre": "OAUTH Integration English Version",
-            "url": "https://docs.google.com/document/d/1y_lDcAp956WDmuiEPTSH57YxsyBa14SG/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        }
-    ]
-  },
-  {
-      "tipo": "API", 
-      "nombre": "Utilizar API desde Postman", 
-      "fecha": "07-12-2023",
-      "importante":"",
-      "descripcion": "Veremos como realizar la misma consulta de apidocs en una herramienta externa de BUK (Postman)", 
-      "url": "manual.html?id=api_postman",
-      "activo": false,
-      "imagenes": ["imagenes/api_postman/utilizar_api_postman_1.png", "imagenes/api_postman/utilizar_api_postman_2.png"],
-      "highlightDetails": [
-            { x: 955, y: 5, width: 45, height: 40 },  // Rectángulo para la primera imagen
-            { x: 1010, y: 63, width: 270, height: 40 }  // Rectángulo para la segunda imagen
-        ],
-      "instrucciones": [
-            "Instrucción 1: Aquí es donde configuramos el SFTP.",
-            "Instrucción 2: Asegúrate de verificar los detalles de la configuración."
-        ],
-        "enlacesDocumentacion": [
-        {
-            "nombre": "Integración OAUTH",
-            "url": "https://docs.google.com/document/d/153Z6dIywDyZQVLDG458cUdKxSISovoZ3/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        },
-        {
-            "nombre": "OAUTH Integration English Version",
-            "url": "https://docs.google.com/document/d/1y_lDcAp956WDmuiEPTSH57YxsyBa14SG/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        }
-    ]
-  },
-  {
-      "tipo": "API", 
-      "nombre": "Configuración de Webhook y pruebas", 
-      "fecha": "15-12-2023",
-      "importante":"",
-      "descripcion": "Veremos la configuración del webhook y realizaremos una prueba con un servidor externo", 
-      "url": "manual.html?id=webhook_config_pruebas",
-      "activo": false,
-      "imagenes": ["imagenes/api_postman/utilizar_api_postman_1.png", "imagenes/api_postman/utilizar_api_postman_2.png"],
-      "highlightDetails": [
-            { x: 955, y: 5, width: 45, height: 40 },  // Rectángulo para la primera imagen
-            { x: 1010, y: 63, width: 270, height: 40 }  // Rectángulo para la segunda imagen
-        ],
-      "instrucciones": [
-            "Instrucción 1: Aquí es donde configuramos el SFTP.",
-            "Instrucción 2: Asegúrate de verificar los detalles de la configuración."
-        ],
-        "enlacesDocumentacion": [
-        {
-            "nombre": "Integración OAUTH",
-            "url": "https://docs.google.com/document/d/153Z6dIywDyZQVLDG458cUdKxSISovoZ3/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        },
-        {
-            "nombre": "OAUTH Integration English Version",
-            "url": "https://docs.google.com/document/d/1y_lDcAp956WDmuiEPTSH57YxsyBa14SG/edit?usp=drive_link&ouid=106476513391002674895&rtpof=true&sd=true"
-        }
-    ]
-  },
-  {
       "tipo": "SSO", 
       "nombre": "Guía de Configuración para Single Sign-On (SSO) mediante protocolo OAuth", 
       "fecha": "17-10-2024",
@@ -227,7 +87,7 @@ const manuales = [
     "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Ingresa la palabra <strong>SAML</strong> para encontrar la configuración específica.</p>",
     
     "<table class='table table-striped table-bordered'> \
-        <thead class='table-dark'> \
+        <thead style='background-color: #2f4daa; color: white;'> \
             <tr> \
                 <th>Parámetro</th> \
                 <th>Descripción</th> \
@@ -358,7 +218,7 @@ const manuales = [
     "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Verás el listado de <strong>razón social (empresas)</strong>, ya que la configuración es por razón social.</p>",
     
     "<table class='table table-striped table-bordered'> \
-        <thead class='table-dark'> \
+        <thead style='background-color: #2f4daa; color: white;'> \
             <tr> \
                 <th>Parámetro</th> \
                 <th>Descripción</th> \
