@@ -261,6 +261,112 @@ const manuales = [
     "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Verás cómo comienza el proceso, mostrando un porcentaje de envío.</p>",
     "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Finalmente, aparecerá la pantalla de <strong>¡Finalizado con éxito!</strong></p>"
 ]
+},
+{
+  "tipo": "API", 
+  "nombre": "Creación de token y conexión a Apidocs", 
+  "fecha": "05-11-2024",
+  "importante":"",
+  "descripcion": "Veremos como configurar el token (llave) desde BUK para poder conectarnos en apidocs", 
+  "url": "manual.html?id=token_api",
+  "activo": false, 
+  "imagenes": ["imagenes/token_api/banco_a_sftp_1.png",
+               "imagenes/token_api/banco_a_sftp_2.png",
+               "imagenes/token_api/banco_a_sftp_3.png",
+               "imagenes/token_api/banco_a_sftp_4.png",
+               "imagenes/token_api/banco_a_sftp_5.png",
+               "imagenes/token_api/banco_a_sftp_6.png",
+               "imagenes/token_api/banco_a_sftp_7.png",
+               "imagenes/token_api/banco_a_sftp_8.png",
+               "imagenes/token_api/banco_a_sftp_9.png",
+               "imagenes/token_api/banco_a_sftp_10.png",
+               "imagenes/token_api/banco_a_sftp_11.png",
+               "imagenes/token_api/banco_a_sftp_12.png",
+               "imagenes/token_api/banco_a_sftp_13.png",
+               "imagenes/token_api/banco_a_sftp_14.png",
+               "imagenes/token_api/banco_a_sftp_15.png",
+               "imagenes/token_api/banco_a_sftp_16.png",
+               "imagenes/token_api/banco_a_sftp_17.png",
+               "imagenes/token_api/banco_a_sftp_18.png",
+               "imagenes/token_api/banco_a_sftp_19.png"
+            ],
+  "highlightDetails": [
+        { x: 1030, y: 3, width: 45, height: 40 },
+        { x: 1045, y: 97, width: 240, height: 40 },
+        { x: 1100, y: 50, width: 185, height: 40 },
+        { x: 300, y: 368, width: 49, height: 40 },
+        { x: 1210, y: 444, width: 80, height: 40 },
+        { x: 1, y: 433, width: 50, height: 40 },
+        { x: 40, y: 194, width: 100, height: 40 },
+        { x: 320, y: 92, width: 95, height: 40 },
+        { x: 535, y: 375, width: 100, height: 40 },
+        { x: 227, y: 128, width: 520, height: 40 },
+        { x: 235, y: 183, width: 500, height: 36 },
+        { x: 650, y: 470, width: 90, height: 36 },
+        { x: 5, y: 145, width: 35, height: 40 },
+        { x: 40, y: 165, width: 120, height: 30 },
+        { x: 790, y: 195, width: 57, height: 30 },
+        { x: 575, y: 276, width: 40, height: 40 },
+        { x: 530, y: 340, width: 80, height: 35 },
+        { x: 1060, y: 20, width: 230, height: 80 },
+        { x: 1060, y: 20, width: 230, height: 60 },
+    ],
+  "instrucciones": [
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Haz clic para acceder a los <strong>ajustes de la plataforma</strong>.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Aquí encontrarás todas las <strong>configuraciones disponibles</strong> en la plataforma.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Debes ingresar la palabra <strong>BANCO</strong> para encontrar la configuración específica.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Activamos la opción <strong>Integrar Envío de Archivos de Bancos</strong>.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Haz clic en <strong>Guardar</strong> para confirmar la activación.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Selecciona <strong>Marketplace</strong> para ir a la configuración del servidor SFTP.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Selecciona <strong>Integraciones</strong>. Aquí verás todas las integraciones que maneja BUK.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Selecciona <strong>Contratadas</strong>.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Aquí podrás configurar la <strong>integración de bancos mediante SFTP</strong>.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Verás el listado de <strong>razón social (empresas)</strong>, ya que la configuración es por razón social.</p>",
+  
+  "<table class='table table-striped table-bordered'> \
+      <thead style='background-color: #2f4daa; color: white;'> \
+          <tr> \
+              <th>Parámetro</th> \
+              <th>Descripción</th> \
+          </tr> \
+      </thead> \
+      <tbody> \
+          <tr> \
+              <td><strong>Backup URL</strong></td> \
+              <td>Especifica si tu servidor es <strong>SFTP</strong> o <strong>FTP</strong> y agrega tu URL, compuesta por el tipo de servidor, usuario, dirección IP o DNS y el puerto de conexión. Ejemplo: sftp://usuario@127.0.0.1:22</td> \
+          </tr> \
+          <tr> \
+              <td><strong>Backup Password</strong></td> \
+              <td>Corresponde a la <strong>contraseña del servidor</strong> que estás configurando.</td> \
+          </tr> \
+          <tr> \
+              <td><strong>Backup Path</strong></td> \
+              <td>La ruta donde se almacenará el archivo en tu servidor. Ejemplo: <code>'/etc/tmp/'</code></td> \
+          </tr> \
+          <tr> \
+              <td><strong>Encriptación Activa</strong></td> \
+              <td>Si necesitas que tu archivo viaje encriptado, activa esta casilla.</td> \
+          </tr> \
+          <tr> \
+              <td><strong>Llave Pública</strong></td> \
+              <td>Las llaves SSH o públicas se utilizan para autenticación en servidores remotos. Si utilizas SSH, no es necesaria la contraseña.</td> \
+          </tr> \
+          <tr> \
+              <td><strong>Recipiente de la llave pública</strong></td> \
+              <td>Un correo o identificador del dueño de la llave pública, para respaldo.</td> \
+          </tr> \
+      </tbody> \
+  </table>",
+  
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Haz clic en <strong>Guardar</strong> para confirmar la configuración.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Haz clic en <strong>Administrativo</strong>.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Luego, selecciona <strong>Panel de Control</strong>.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Expande el mes en el que deseas hacer el envío del archivo de banco.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Haz clic en los <strong>tres puntos</strong> para ver más opciones.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Selecciona la opción <strong>Enviar banco</strong> para comenzar el proceso.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Verás cómo comienza el proceso, mostrando un porcentaje de envío.</p>",
+  "<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Finalmente, aparecerá la pantalla de <strong>¡Finalizado con éxito!</strong></p>"
+]
 }
   
 ];
