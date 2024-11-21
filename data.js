@@ -371,11 +371,11 @@ const manuales = [
 {
   "tipo": "BUK", 
   "nombre": "Monitoreo de LOG SFTP", 
-  "fecha": "18-11-2024",
+  "fecha": "21-11-2024",
   "importante":"",
   "descripcion": "Este manual explica paso a paso cómo activar y revisar los registros de LOG al usar SFTP. Ideal para garantizar un monitoreo efectivo, resolver problemas y mantener un control detallado de las transferencias de archivos.", 
   "url": "manual.html?id=log_sftp",
-  "activo": false, 
+  "activo": true, 
   "imagenes": ["imagenes/log_sftp/activar_log_sftp_1.png",
                "imagenes/log_sftp/activar_log_sftp_2.png",
                "imagenes/log_sftp/activar_log_sftp_3.png",
@@ -776,13 +776,7 @@ const manuales = [
     </tr>\
   </tbody>\
 </table>"
-],
-    "enlacesDocumentacion": [
-        {
-            "nombre": "LOGS SFTP",
-            "url": "https://docs.google.com/document/d/1SxbkmYYhMHrbSN3sJg1ldQmgL94PCEPm/edit?usp=sharing&ouid=114187329860437263985&rtpof=true&sd=true"
-        }
-    ]
+]
 }
   
 ];
