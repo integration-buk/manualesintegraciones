@@ -776,10 +776,15 @@ const manuales = [
     </tr>\
   </tbody>\
 </table>"
+],
+"enlacesDocumentacion": [
+    {
+        "nombre": "Sistema de Logs para Servicio SFTP.",
+        "url": "https://docs.google.com/document/d/1t1GBbDiBY_20oM91on2oowwCPsNybO6risTCb4_DsLI/edit?usp=sharing"
+    },
 ]
 }
   
 ];
-
 
 
