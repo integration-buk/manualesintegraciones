@@ -55,7 +55,7 @@ const manuales = [
   },
   {
       "tipo": "SSO", 
-      "nombre": "Guía de Configuración para Single Sign-On (SSO) mediante protocolo SAML", 
+      "nombre": "Guía de Configuración para SAML solo en buk con Proveedor de Autenticación, diferente a Google o Microsoft", 
       "fecha": "17-10-2024",
       "importante": "Si has llegado a esta sección, debiste haber enviado al cliente el <strong>Identifier</strong> y el <strong>ACS</strong> para generar el XML necesario para la configuración.<br><br> \
       Las URLs se generan a partir de la URL del cliente. Por ejemplo, si la URL del cliente es <strong>buk.buk.cl</strong>, entonces el <strong>ACS</strong> y el <strong>Identifier</strong> serán los siguientes:</br></br> \
@@ -781,10 +781,283 @@ const manuales = [
     {
         "nombre": "Sistema de Logs para Servicio SFTP.",
         "url": "https://docs.google.com/document/d/1t1GBbDiBY_20oM91on2oowwCPsNybO6risTCb4_DsLI/edit?usp=sharing"
-    },
+    }]
+},
+{
+  "tipo": "SSO", 
+  "nombre": "Guía para configurar SAML con el Proveedor de Autenticación Microsoft Entra", 
+  "fecha": "20-01-2025",
+  "importante":"",
+  "descripcion": "Este manual te guiará paso a paso en la configuración de SAML en el Proveedor de Autenticación Microsoft Entra", 
+  "url": "manual.html?id=saml_microsoft",
+  "activo": true, 
+  "imagenes": [
+              "imagenes/sso_saml_microsoft/saml_microsoft/1.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/2.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/3.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/4.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/5.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/6.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/7.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/8.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/9.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/10.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/11.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/13.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/14.png",  
+              "imagenes/sso_saml_microsoft/saml_microsoft/15.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/16.png", 
+              "imagenes/sso_saml_microsoft/saml_microsoft/18.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/19.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/20.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/21.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/22.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/23.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/24.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/25.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/26.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/27.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/28.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/29.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/30.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/31.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/32.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/33.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/34.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/35.png",
+              "imagenes/sso_saml_microsoft/saml_microsoft/36.png"  
+           ],
+              
+           "highlightDetails": [
+           
+
+        { x: 10, y: 450, width: 120, height: 30 },  // Rectángulo para la primera imagen
+        { x: 13, y: 480, width: 160, height: 40 },  // Rectángulo para la segunda imagen
+        { x:240, y: 120, width: 125, height: 30 },  // Rectángulo para la tercera imagen
+        { x: 30, y: 120, width: 150, height: 30 },  // Rectángulo para la cuarta imagen
+        { x: 900, y: 260, width: 350, height: 25 },  // Rectángulo para la quinta imagen
+        { x: 460, y: 300, width: 200, height: 90 },  // Rectángulo para la sexta imagen
+        { x: 450, y: 250, width: 200, height: 80 },  // Rectángulo para la séptima imagen
+        { x: 210, y: 240, width: 280, height: 40 },  // Rectángulo para la octava imagen
+        { x: 730, y: 200, width: 410, height: 40 },  // Rectángulo para la novena imagen
+        { x: 730, y: 340, width: 400, height: 58 },  // Rectángulo para la décima imagen 
+        { x: 220, y: 621, width: 250, height: 20 },  // Rectángulo para la undécimo imagen 
+        { x: 30, y: 400, width: 200, height: 33 },  // Rectángulo para la decimotercero imagen
+        { x: 250, y: 120, width: 170, height: 30 },  // Rectángulo para la decimocuarto imagen 
+        { x: 8, y: 220, width: 150, height: 53 },  // Rectángulo para la decimoquinta imagen  
+        { x: 300, y: 620, width: 100, height: 35 },  // Rectángulo para la decimosexto imagen  
+        { x: 1230, y: 65, width: 60, height: 33 },  // Rectángulo para la decimoctavo imagen 
+        { x: 1050, y: 100, width: 200, height: 38 },  // Rectángulo para la decimonoveno imagen
+        { x: 1150, y: 53, width: 140, height: 33 },  // Rectángulo para la vigésimo imagen
+        { x: 580, y: 170, width: 330, height: 35 },  // Rectángulo para la vigésimoprimero imagen 
+        { x: 930, y: 170, width: 330, height: 35 },  // Rectángulo para la vigésimosegundo imagen
+        { x: 220, y: 255, width: 340, height: 35 },  // Rectángulo para la vigésimotercero imagen
+        { x: 415, y: 585, width: 430, height: 20 },  // Rectángulo para la vigésimocuarto imagen
+        { x: 575, y: 255, width: 340, height: 35 },  // Rectángulo para la vigésimoquinto imagen
+        { x:930, y: 255, width: 340, height: 35 },  // Rectángulo para la vigésimosexto imagen
+        { x: 50, y: 100, width: 1250, height: 65 },  // Rectángulo para la vigésimoséptimo imagen
+        { x: 220, y: 335, width: 340, height: 35 },  // Rectángulo para la vigésimooctavo imagen   
+        { x: 290, y: 160, width: 60, height: 35 },  // Rectángulo para la vigésimonoveno imagen  
+        { x: 185, y: 395, width: 270, height: 35 },  // Rectángulo para la trigésimo imagen  
+        { x: 700, y: 367, width: 110, height: 35 },  // Rectángulo para la trigésimoprimero imagen 
+        { x: 700, y: 398, width: 110, height: 35 },  // Rectángulo para la trigésimosegundo imagen
+        { x: 700, y: 420, width:110, height: 35 },  // Rectángulo para la trigésimotercero imagen  
+        { x: 1170, y: 10, width: 120, height: 35 },  // Rectángulo para la trigésimocuarto imagen  
+        { x: 950, y: 360, width: 150, height: 35 },  // Rectángulo para la trigésimoquinto imagen
+        { x: 450, y: 170, width: 400, height: 300 },  // Rectángulo para la trigésimosexto imagen  
+        
+        
+
+    ],
+  "instrucciones": [
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Al estar en Microsoft, dirigirse a las 3 rayitas horizontales del panel superior y dar click en Microsoft Entra ID</strong>.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Aquí se debe hacer click en “Aplicaciones empresariales” ubicado en el panel izquierdo.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se debe dar click en “Nueva aplicación”, que se encuentra en el panel superior.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>En esta sección, dar click en “Cree su propia aplicación”, ya que para configurar SAML es necesario crear una conexión entre buk-SAML-Microsoft y esto es a través de una aplicación</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se debe colocar el nombre de la aplicación (considerando uno que le permita relacionarlo con buk y con sso) y se debe dejar la opción 3 en la pregunta: “¿Cuál es el objetivo de utilizar la aplicación?”</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Ya creada la aplicación, se despliegan varias opciones, donde haremos click a la opción 2 “Configurar inicio de sesión único”</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se debe dar click en la opción “SAML”, para poder reiniciar la configuración</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>En esta instancia es donde se inicia la configuración de SAML con buk y microsoft, por lo cual se deben llenar los 2 campos obligatorios, con las url’s que facilita buk, que son el identificador y el ACS respectivamente. Para agregarlas se debe dar click en el lápiz de editar</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Primero se agrega el identificador</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Luego se agrega el ACS y se procede a guardar, ya que los demás campos al ser opcionales no son necesarios de completar</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se observan las url’s ya configuradas y se habilita para descargar 3 archivos, el que se necesita para continuar es el “XML de metadatos de federación”, por lo cual ese es el que se debe descargar</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se descarga el archivo XML, se procede a guardar y volvemos al inicio de sesión único, luego a 'Usuarios y grupos' </p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>En ésta instancia se hace click en 'Agregar usuario o grupo'</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Luego nos dirigimos a Usuarios -> Ninguna selecciona</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se seleccionan los usuarios que también están registrados en buk y necesitan iniciar sesión, se procede a guardar y a asignar</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se verifica nuevamente en la aplicación que los usuarios se hayan cargado correctamente y luego vamos a la plataforma en buk para configurar</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se debe ir Administración -> Parámetros Generales</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>En el buscador, colocar SAML, donde se muestran los parámetros para poder configurar SAML en buk, teniendo en cuenta que la mayoría de la información se encuentra en el archivo XML</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Dominios a autenticar vía SAML: éste lo facilita el cliente, puede ser uno o más, no hay límite de dominios a configurar</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>SAML: Issuer/Audience URL (opcional): se coloca la misma url del identificador</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>SAML: Authentication Context (opcional): a pesar de ser opcional, es recomendable colocarlo, éste ayuda a reconocer la autenticación de SAML: se coloca lo siguiente: “urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified”</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>SAML: URL del IdP para SSO: es la url que define la conexión de inicio de sesión con el Proveedor de Autenticación, por lo tanto se encuentra en el archivo XML. Se encuentra al final del archivo siguiente formato: “https://login.microsoftonline.com/0cdd7094-d780-4b64-8b3f-30a7da45742f/saml2”</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>SAML: URL del IdP para SLO: se coloca la misma url que la de inicio</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>SAML: Certificado de IdP: es el certificado que hace que todo pueda funcionar, ya que al ser único es quien permite la conexión entre el Proveedor de Servicios (buk) y el Proveedor de Autenticación (Microsoft). Se encuentra dentro del archivo XML. Además. el campo SAML: Algoritmo del hash del certificado: debe quedar en sha256</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se coloca en la casilla correspondiente</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se procede a Habilitar SAML</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se hacen pruebas de inicio de sesión</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se debe colocar el correo electrónico con el cual se autenticará bajo SAML</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se muestra como se redirecciona su proveedor de autenticación (google), debe colocarse nuevamente el correo</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se debe colocar la contraseña que tienen definida para Google</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se muestra la opción de si se desea mantener la sesión iniciada o no. Esto es decisión del usuario</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se procede ir al panel superior izquierdo, con la intención de cerrar la sesión y corroborar que el flujo de SAML funcione completamente</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Se da click a 'Cerrar Sesión'</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'>Sesión finalizda exitosamente</p>",
+
+
+
+],
+"enlacesDocumentacion": [
+     {
+            "nombre": "Integración SAML",
+            "url": "https://docs.google.com/document/d/1SxbkmYYhMHrbSN3sJg1ldQmgL94PCEPm/edit?usp=sharing&ouid=114187329860437263985&rtpof=true&sd=true"
+        },
+        {
+            "nombre": "SAML Integration English Version",
+            "url": "https://docs.google.com/document/d/1uA8rPuCZrQkfMsKsBe451NL0jAZMmsy4/edit?usp=sharing&ouid=114187329860437263985&rtpof=true&sd=true"
+        },
+        {
+            "nombre": "Errores y Soluciones SSO Buk/Cliente",
+            "url": "https://docs.google.com/document/d/1Rk8qPTEluJVnnHUMMT7WVBFWUFYwcWED/edit?usp=sharing&ouid=106476513391002674895&rtpof=true&sd=true"
+        }
 ]
+},
+
+{
+  "tipo": "SSO", 
+  "nombre": "Guía para configurar SAML con el Proveedor de Autenticación Google Workspace", 
+  "fecha": "24-2-2025",
+  "importante":"",
+  "descripcion": "Este manual te guiará paso a paso en la configuración de SAML en el Proveedor de Autenticación de Google Workspace.", 
+  "url": "manual.html?id=saml_google",
+  "activo": true, 
+  "imagenes": [
+
+    
+              "imagenes/sso_saml_google/Configuración_Google/1.png",
+              "imagenes/sso_saml_google/Configuración_Google/2.png",
+              "imagenes/sso_saml_google/Configuración_Google/3.png",
+              "imagenes/sso_saml_google/Configuración_Google/4.png", 
+              "imagenes/sso_saml_google/Configuración_Google/5.png",
+              "imagenes/sso_saml_google/Configuración_Google/5.1.png",
+              "imagenes/sso_saml_google/Configuración_Google/6.png",
+              "imagenes/sso_saml_google/Configuración_Google/7.png",
+              "imagenes/sso_saml_google/Configuración_Google/7.1.png",
+              "imagenes/sso_saml_google/Configuración_Google/8.png", 
+              "imagenes/sso_saml_google/Configuración_Google/9.png", 
+              "imagenes/sso_saml_google/Configuración_Google/10.png", 
+              "imagenes/sso_saml_google/Configuración_Google/11.png",
+              "imagenes/sso_saml_google/Configuración_Google/12.png",
+              "imagenes/sso_saml_google/Configuración_Google/13.png",
+              "imagenes/sso_saml_google/Configuración_Google/14.png",
+              "imagenes/sso_saml_google/Configuración_Google/15.png",
+              "imagenes/sso_saml_google/Configuración_Google/16.png", 
+              "imagenes/sso_saml_google/Configuración_Google/17.png", 
+              "imagenes/sso_saml_google/Configuración_Google/18.png", 
+              "imagenes/sso_saml_google/Configuración_Google/19.png",
+              "imagenes/sso_saml_google/Configuración_Google/20.png", 
+              "imagenes/sso_saml_google/Configuración_Google/20.1.png", 
+              "imagenes/sso_saml_google/Configuración_Google/21.png",
+              "imagenes/sso_saml_google/Configuración_Google/22.png", 
+              "imagenes/sso_saml_google/Configuración_Google/23.png",
+              "imagenes/sso_saml_google/Configuración_Google/24.png",
+              "imagenes/sso_saml_google/Configuración_Google/25.png",
+
+
+          ],
+  "highlightDetails": [
+   
+
+    { x: 5, y: 12, width: 150, height: 40 },  // Rectángulo para la 1 imagen
+    { x: 13, y: 185, width: 210, height: 35 },  // Rectángulo para la 2 imagen
+    { x:40, y: 260, width: 190, height: 45 },  // Rectángulo para la 3 imagen
+    { x: 410, y: 330, width: 260, height: 35 },  // Rectángulo para la 4 imagen
+    { x: 390, y: 258, width: 200, height: 48 },  // Rectángulo para la 5 imagen
+    { x: 1145, y: 675, width: 100, height: 35 },  // Rectángulo para la 5.1
+    { x: 340, y: 153, width: 160, height: 35 },  // Rectángulo para la 6 imagen
+    { x: 350, y: 230, width: 770, height: 120 },  // Rectángulo para la 7 imagen
+    { x: 1030, y: 680, width: 110, height: 35 },  // Rectángulo para la 7.1 imagen
+    { x: 1035, y: 525, width: 100, height: 35 },  // Rectángulo para la 8 imagen 
+    { x: 475, y: 135, width: 100, height: 30 },  // Rectángulo para la 9 imagen 
+    { x: 700, y: 180, width: 150, height: 35 },  // Rectángulo para la 10 imagen
+    { x: 1200, y:285, width: 70, height: 30 },  // Rectángulo para la 11 imagen 
+    { x: 1055, y: 100, width: 170, height: 35 },  // Rectángulo para la 12 imagen 
+    { x: 1150, y: 55, width: 130, height: 30 },  // Rectángulo para la 13 imagen 
+    { x: 570, y: 170, width: 150, height: 35 },  // Rectángulo para la 14 imagen
+    { x: 930, y: 170, width: 270, height: 35 },  // Rectángulo para la 15 imagen
+    { x: 220, y: 253, width: 330, height: 35 },  // Rectángulo para la 16 imagen 
+    { x: 650, y: 400, width: 330, height: 20 },  // Rectángulo para la 17 imagen
+    { x: 580, y: 255, width: 330, height: 35 },  // Rectángulo para la 18 imagen
+    { x: 930, y: 255, width: 320, height: 35 },  // Rectángulo para la 19 imagen
+    { x: 75, y: 85, width: 630, height: 240 },  // Rectángulo para la 20 imagen
+    { x:220, y: 337, width: 340, height: 35 },  // Rectángulo para la 20.1 imagen
+    { x: 290, y: 160, width: 60, height: 35 },  // Rectángulo para la 21 imagen
+    { x: 220, y: 368, width: 200, height: 35 },  // Rectángulo para la 22 imagen
+    { x: 890, y: 382, width: 100, height: 35 },  // Rectángulo para la 23 imagen 
+    { x: 890, y: 375, width: 95, height: 35 },  // Rectángulo para la 24 imagen 
+    { x: 1185, y: 5, width: 100, height: 35 },  // Rectángulo para la 25 imagen
+   
+    
+
+
+    ],
+  "instrucciones": [
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> En la pantalla principal de google workspace, hacer click en las tres rayitas en el panel superior izquierdo.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Al desplegarse el menú, ir a Apps.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Luego dar click en “Apps web y para dispositivos móviles”.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Al mostrarse la siguiente pantalla, dirigirse al panel superior y dar click en “Agregar app”, luego click en “Agregar una app de SAML personalizada”.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Se debe colocar el nombre que tendrá la aplicación, la cual es obligatoria, los demás campos son opcionales.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> En éste caso se colocó BUK-SAML, como referencia.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> En la siguiente pantalla, se muestra la data que se necesita para configurar en buk. Está la opción de “Descargar el Metadatos”, como también la opción de copiar cada parámetro por separado. En ésta instancia, se configurará descargando el metadatos, el cual luego de descargarlo se guarda para después.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> A continuación, se deben colocar las 2 url’s que entrega buk que son el Identificador (ID de identidad) y el ACS. Ambos son obligatorios. De igual forma en campo “Formato de ID de nombre”, debe ir como “Email”.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Así debe quedar configurado.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> En ésta instancia, se recomienda no modificar nada a menos que el cliente quiera configurar un atributo extra a la configuración. Pero ya que buk solo reconoce el correo electrónico como medio de inicio de sesión, es mejor mantenerlo sin condiciones adicionales.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Se muestra la aplicación ya creada y configurada. En la pantalla de la aplicación ya creada para SAML en buk, hacer click en el apartado “Acceso de usuario”.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Por defecto está desactivada, por lo cual se procede a “Activada para todos”. Al guardar el cambio, el proceso queda actualizado.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Se guarda y se va a configurar en buk.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Se debe ir Administración -> Parámetros Generales.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> En el buscador, colocar SAML, donde se muestran los parámetros para poder configurar SAML en buk, teniendo en cuenta que la mayoría de la información se encuentra en el archivo XML.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Dominios a autenticar vía SAML: éste lo facilita el cliente, puede ser uno o más, no hay límite de dominios a configurar. Se deben separar por ;</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> SAML: Issuer/Audience URL (opcional): se coloca la misma url del identificador.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> SAML: Authentication Context (opcional): a pesar de ser opcional, es recomendable colocarlo, éste ayuda a reconocer la autenticación de SAML: se coloca lo siguiente: “urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified”.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> SAML: URL del IdP para SSO: es la url que define la conexión de inicio de sesión con el Proveedor de Autenticación, por lo tanto se encuentra en el archivo XML. Se encuentra al final del archivo siguiente formato: “https://accounts.google.com/o/saml2/idp?idpid=C00j0vyep”.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Una vez con el dato copiado, se pega en el apartado correspondiente.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> SAML: URL del IdP para SLO: se coloca la misma url que la de inicio.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> SAML: Certificado de IdP: es el certificado que hace que todo pueda funcionar, ya que al ser único es quien permite la conexión entre el Proveedor de Servicios (buk) y el Proveedor de Autenticación (Google Workspace). Se encuentra dentro del archivo XML.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> SAML: Algoritmo del hash del certificado: debe quedar en sha256. Se procede a habilitar SAML.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Se hacen pruebas de inicio de sesión, colocando el correo del usuario con el dominio registrado.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Se activa otra ventana, que lleva directo a Google Workspace apra reafirmar el correo.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Se coloca la contraseña que el usuario tiene asociada al correo de Google.</p>",
+"<p class='text-center' style='color: #2f4daa; font-size: 1.0rem; margin-top: 80px;'> Se muestra el inicio exitoso a Buk utilizando SAML.</p>",
+
+
+
+
+
+
+],
+"enlacesDocumentacion": [
+  {
+    "nombre": "Integración SAML",
+    "url": "https://docs.google.com/document/d/1SxbkmYYhMHrbSN3sJg1ldQmgL94PCEPm/edit?usp=sharing&ouid=114187329860437263985&rtpof=true&sd=true"
+},
+{
+    "nombre": "SAML Integration English Version",
+    "url": "https://docs.google.com/document/d/1uA8rPuCZrQkfMsKsBe451NL0jAZMmsy4/edit?usp=sharing&ouid=114187329860437263985&rtpof=true&sd=true"
+},
+{
+    "nombre": "Errores y Soluciones SSO Buk/Cliente",
+    "url": "https://docs.google.com/document/d/1Rk8qPTEluJVnnHUMMT7WVBFWUFYwcWED/edit?usp=sharing&ouid=106476513391002674895&rtpof=true&sd=true"
 }
-  
-];
+]
+},
+
+
+
+
+
+]
+
 
 
